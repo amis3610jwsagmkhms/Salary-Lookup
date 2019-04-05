@@ -1,0 +1,6 @@
+Update branch with master code: 
+    git fetch
+    git rebase origin/master
+
+Run the DotNet Application: 
+    dotnet run
