@@ -43,5 +43,12 @@ namespace Salarylookup.Api.Controllers
             }
             this.db.SaveChanges();
         }
+
+        // Http request GET returns all books
+        [HttpGet]
+        public IActionResult Get()
+        {
+            return Ok(db.Salaries);
+        }
     }
 }
