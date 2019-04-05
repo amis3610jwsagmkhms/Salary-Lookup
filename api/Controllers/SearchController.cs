@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq; 
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-
+using Salarylookup.Api.Data;
 using Salarylookup.Api.Models;
 
 // This controller manages the routes for salary searches
