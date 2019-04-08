@@ -9,8 +9,8 @@ using Salarylookup.Api.Data;
 namespace Salarylookup.Api.Migrations
 {
     [DbContext(typeof(DatabaseContext))]
-    [Migration("20190405182208_init")]
-    partial class init
+    [Migration("20190408215809_init-1")]
+    partial class init1
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
