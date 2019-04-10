@@ -66,5 +66,7 @@ namespace Salarylookup.Api.Controllers
             // return the salary inside Http 200 OK
             return Ok(salary); 
         }
+
+        // ADD OTHER SEARCH FUNCTIONS
     }
 }
