@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { SalaryRowComponent } from './salaries/salary-row/salary-row.component';
 import { SalariesComponent } from './salaries/salaries/salaries.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     SalaryRowComponent,
-    SalariesComponent
+    SalariesComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
