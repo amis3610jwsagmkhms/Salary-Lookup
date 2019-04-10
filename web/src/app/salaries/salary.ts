@@ -24,18 +24,18 @@
 // }
 
 export class Salary {
-    Last_Name: string;
-    First_Name: string;
-    Middle_Name: string;
-    Vp_College: string;
-    Department: string;
-    Organization: string;
-    Title: string;
-    Annual_Base_Salary: number;
-    Hourly_Rate: number;
-    Id: number;
-    Sex: string;
-    Race: string;
-    Ethnicity: string;
-    Spirit_Animal: string;
+    last_Name: string;
+    first_Name: string;
+    middle_Name: string;
+    vp_College: string;
+    department: string;
+    organization: string;
+    title: string;
+    annual_Base_Salary: number;
+    hourly_Rate: number;
+    id: number;
+    sex: string;
+    race: string;
+    ethnicity: string;
+    spirit_Animal: string;
 }
