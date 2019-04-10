@@ -4,11 +4,15 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
+import { SalaryRowComponent } from './salaries/salary-row/salary-row.component';
+import { SalariesComponent } from './salaries/salaries/salaries.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    SalaryRowComponent,
+    SalariesComponent
   ],
   imports: [
     BrowserModule,
