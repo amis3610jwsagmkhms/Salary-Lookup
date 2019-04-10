@@ -19,8 +19,9 @@ export class SalariesComponent implements OnInit {
 
   constructor(private salariesService: SalariesService) { }
 
-  getSalaries() {
-    this.salaries = this.salariesService.getSalaries();
+  getSalaries(): void {
+    this.salariesService.getSalaries()
+      .subscribe(salaries => this.salaries = salaries);
   }
 
   ngOnInit() {
