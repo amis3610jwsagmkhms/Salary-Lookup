@@ -22,6 +22,16 @@ namespace Salarylookup.Api
         {
             services.AddDbContext<DatabaseContext>(options => options.UseNpgsql(Configuration.GetConnectionString("DatabaseContext"))); 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+
+            services.AddCors(options =>
+            {
+                options.AddPolicy("CorsPolicy", builder =>
+                {
+                    builder.WithOrigins("http://localhost:4200")
+                    .AllowAnyMethod()
+                    .AllowAnyHeader();
+                });
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -38,7 +48,8 @@ namespace Salarylookup.Api
             }
 
             app.UseHttpsRedirection();
-            app.UseMvc();
+            app.UseCors("CorsPolicy");
+            app.UseMvc(); // UseMvc() must be last
         }
     }
 }
