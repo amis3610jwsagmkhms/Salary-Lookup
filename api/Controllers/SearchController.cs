@@ -51,11 +51,27 @@ namespace Salarylookup.Api.Controllers
             return Ok(db.Salaries);
         }
 
-        [HttpGet("{id}")]
-        public IActionResult GetSalary(int id)
+        [HttpGet("id!{id}")]
+        public IActionResult GetSalaryById(int id)
         {   
             // finds the row that contains the Id
             var salary = db.Salaries.FirstOrDefault(s => s.Id == id); 
+            
+            // if no salary is found with the id, return 404
+            if (salary == null)
+            {
+                return NotFound();
+            }
+
+            // return the salary inside Http 200 OK
+            return Ok(salary); 
+        }
+
+        [HttpGet("lastname!{lName}")]
+        public IActionResult GetSalaryByLastName(string lName)
+        {   
+            // finds the row that contains the Id
+            System.Linq.IQueryable<Salary> salary = db.Salaries.Where(s => s.Last_Name.ToLower() == lName.ToLower()); 
             
             // if no salary is found with the id, return 404
             if (salary == null)
