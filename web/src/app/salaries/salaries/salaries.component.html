@@ -1,3 +1,6 @@
-<h2>Salaries</h2>
+<!-- <h2>Salaries</h2>
 <app-salary-row *ngFor="let salary of salaries" [salary]="salary">
-</app-salary-row>
+</app-salary-row> -->
+
+<h2>Salaries</h2>
+<a href="" *ngFor="let salary of salaries" routerLink="/detail/{{salary.id}}">{{salary.last_Name}}, {{salary.first_Name}}</a>
