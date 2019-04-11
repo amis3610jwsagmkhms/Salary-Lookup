@@ -11,4 +11,6 @@ The Ohio State University - Foundations of Business Informations Systems (AMIS 3
     With the support of the university and the public, this application could now bring about any potential discrepancies lingering in faculty diversity and equality.
     
 # Architecture
-    The application utilizes ASP.NET core to run in the background. ASP.NET handles both the controllers and models, all while connecting       to the database. This base is what Angular works off of to bring about the website functionalities. It creates separate models and HTML     in order for the response to sent from the server to the client.
+    The application utilizes ASP.NET core to run in the background. 
+    ASP.NET handles both the controllers and models, all while connecting to the database. This base is what Angular works off of to bring about the website functionalities. 
+    It creates separate models and HTML in order for the response to sent from the server to the client.
