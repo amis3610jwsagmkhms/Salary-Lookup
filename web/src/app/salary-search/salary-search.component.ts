@@ -19,7 +19,7 @@ export class SalarySearchComponent implements OnInit {
   constructor(private salariesService: SalariesService) { }
 
   // Push a search term into the observable stream.
-  serarch(term: string): void {
+  search(term: string): void {
     this.searchTerms.next(term); 
   }
 

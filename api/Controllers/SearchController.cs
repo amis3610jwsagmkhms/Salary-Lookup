@@ -51,7 +51,7 @@ namespace Salarylookup.Api.Controllers
             return Ok(db.Salaries);
         }
 
-        [HttpGet("id={id}")]
+        [HttpGet("id!{id}")]
         public IActionResult GetSalaryById(int id)
         {   
             // finds the row that contains the Id
@@ -67,7 +67,7 @@ namespace Salarylookup.Api.Controllers
             return Ok(salary); 
         }
 
-        [HttpGet("lastname={lName}")]
+        [HttpGet("lastname!{lName}")]
         public IActionResult GetSalaryByLastName(string lName)
         {   
             // finds the row that contains the Id

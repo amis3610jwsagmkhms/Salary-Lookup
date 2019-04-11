@@ -37,7 +37,7 @@ export class SalariesService {
 
   /** GET hero by id. Will 404 if id not found */
   getSalary(id: number): Observable<Salary> { // server responds with a single salary rather than an array
-    const url = `${this.salariesUrl}/${id}`; // constructs a request URL with the desired id
+    const url = `${this.salariesUrl}/id!${id}`; // constructs a request URL with the desired id
     return this.http.get<Salary>(url).pipe( 
       tap(_ => console.log(`fetched salary for id=${id}`)),
       catchError(this.handleError<Salary>(`getSalary id=${id}`))
@@ -49,8 +49,8 @@ export class SalariesService {
       return of([]);
     }
 
-    return this.http.get<Salary[]>(`${this.salariesUrl}/?last_name=${term}'`).pipe(
-      tap(_ => console.log(`found salaries matching "${term}`)),
+    return this.http.get<Salary[]>(`${this.salariesUrl}/lastname!${term}`).pipe(
+      tap(_ => console.log(`found salaries matching Last Name ="${term}`)),
       catchError(this.handleError<Salary[]>('searchSalaries',[]))
     )
   }
