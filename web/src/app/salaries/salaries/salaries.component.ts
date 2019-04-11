@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable, of } from 'rxjs'; 
@@ -15,6 +15,7 @@ import { SalariesService } from '../salaries.service';
 export class SalariesComponent implements OnInit {
   
   salaries: Salary[];
+  @Input() salary: any;
 
 
   constructor(private salariesService: SalariesService) { }
