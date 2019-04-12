@@ -9,7 +9,7 @@ using Salarylookup.Api.Models;
 // This controller manages the routes for salary searches
 namespace Salarylookup.Api.Controllers
 {
-
+    [Route("")]
     [Route("api/search")]
     [ApiController]
     public class SearchController : ControllerBase
