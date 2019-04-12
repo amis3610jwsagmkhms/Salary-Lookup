@@ -1,4 +1,15 @@
-<h1>{{ title }}</h1>
 <app-navbar></app-navbar>
-<app-salary-search></app-salary-search>
-<router-outlet></router-outlet>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+            <div class="card">
+                <div class="card-body">
+                    <app-salary-search></app-salary-search>
+                </div>
+            </div>
+        </div>
+    </div>
+    <router-outlet></router-outlet>     
+</div>
+
