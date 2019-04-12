@@ -1,25 +1,37 @@
 <div *ngIf="salary">
   <h2>{{salary.last_Name | uppercase}}, {{salary.first_Name | uppercase}} {{salary.middle_name}} Salary Details</h2>
-  <div><span>Id: </span> {{salary.id}}</div>
+  <div>
+    <p>Id: {{salary.id}}</p>
+    <p>Last Name: {{salary.last_Name}}</p>
+    <p>First Name: {{salary.first_Name}}</p>
+    <p *ngIf="salary.middle_Name">Middle Name: {{salary.middle_Name}}</p>
+    <p>College: {{salary.vp_College}}</p>
+    <p>Department: {{salary.department}}</p>
+    <p>Organization: {{salary.organization}}</p>
+    <p>Title: {{salary.title}}</p>
+    <p>Annual Base Salary: {{salary.annual_Base_Salary | currency}}</p>
+    <p>Hourly Rate: {{salary.hourly_Rate | currency}}</p>
+    <p>Sex: {{salary.sex}}</p>
+    <p>Race: {{salary.race}}</p>
+    <p>Ethnicity: {{salary.ethnicity}}</p>
+    <p>Spirit Animal: {{salary.spirit_Animal}}</p>
+  </div>  
   <button (click)="goBack();">Back</button>
 </div>
 
 
-<!-- <div *ngIf="hero">
-  <h2>{{hero.name | uppercase}} Details</h2>
-  <div><span>id: </span>{{hero.id}}</div>
-  <div>
-    <label>name:
-      <input [(ngModel)]="hero.name" placeholder="name"/>
-    </label>
-  </div>
-  <button (click)="goBack()">go back</button>
-  <button (click)="save()">save</button>
-</div> -->
-
-
-<!-- 
-Copyright Google LLC. All Rights Reserved.
-Use of this source code is governed by an MIT-style license that
-can be found in the LICENSE file at http://angular.io/license
--->
+<!-- Salary schema -->
+<!-- id: number;
+last_Name: string;
+first_Name: string;
+middle_Name: string;
+vp_College: string;
+department: string;
+organization: string;
+title: string;
+annual_Base_Salary: number;
+hourly_Rate: number;
+sex: string;
+race: string;
+ethnicity: string;
+spirit_Animal: string; -->

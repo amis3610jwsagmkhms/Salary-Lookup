@@ -7,7 +7,7 @@ import { SalaryDetailComponent } from './salary-detail/salary-detail.component';
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' }, 
   { path: 'home', component: HomeComponent },
-  { path: 'salaries', component: SalariesComponent },
+  // { path: 'salaries', component: SalariesComponent }, includes ALL data
   { path: 'detail/:id', component: SalaryDetailComponent }
 ];
 
