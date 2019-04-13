@@ -2,6 +2,9 @@
     min-height: 80px;
     color:white;
     font-family: "Georgia", serif;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
   }
 
   .stripe {
@@ -16,12 +19,13 @@
   }
 
   .title {
-    padding: 0px 410px 0px 0px;
+    padding: 0px 0px 0px 0px;
     font-size:40px;
     font-weight:500;
     font-family: "Georgia", serif;
     height: 50px;
     line-height: 30px;
+    flex-grow: 2;
   }
 
   .title2 {
@@ -40,6 +44,7 @@
     font-weight:300;
     height: 100px;
     line-height: 100px;
+    align-self: flex-end;
   }
 
   .nav-link:link {
