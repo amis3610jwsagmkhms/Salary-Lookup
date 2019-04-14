@@ -1,0 +1,77 @@
+Local git is configured with url of 'https://kalheyn@salary-search-api-kalheyn.scm.azurewebsites.net/salary-search-api-kalheyn.git'
+{
+  "availabilityState": "Normal",
+  "clientAffinityEnabled": true,
+  "clientCertEnabled": false,
+  "clientCertExclusionPaths": null,
+  "cloningInfo": null,
+  "containerSize": 0,
+  "dailyMemoryTimeQuota": 0,
+  "defaultHostName": "salary-search-api-kalheyn.azurewebsites.net",
+  "deploymentLocalGitUrl": "https://kalheyn@salary-search-api-kalheyn.scm.azurewebsites.net/salary-search-api-kalheyn.git",
+  "enabled": true,
+  "enabledHostNames": [
+    "salary-search-api-kalheyn.azurewebsites.net",
+    "salary-search-api-kalheyn.scm.azurewebsites.net"
+  ],
+  "ftpPublishingUrl": "ftp://waws-prod-dm1-081.ftp.azurewebsites.windows.net/site/wwwroot",
+  "geoDistributions": null,
+  "hostNameSslStates": [
+    {
+      "hostType": "Standard",
+      "ipBasedSslResult": null,
+      "ipBasedSslState": "NotConfigured",
+      "name": "salary-search-api-kalheyn.azurewebsites.net",
+      "sslState": "Disabled",
+      "thumbprint": null,
+      "toUpdate": null,
+      "toUpdateIpBasedSsl": null,
+      "virtualIp": null
+    },
+    {
+      "hostType": "Repository",
+      "ipBasedSslResult": null,
+      "ipBasedSslState": "NotConfigured",
+      "name": "salary-search-api-kalheyn.scm.azurewebsites.net",
+      "sslState": "Disabled",
+      "thumbprint": null,
+      "toUpdate": null,
+      "toUpdateIpBasedSsl": null,
+      "virtualIp": null
+    }
+  ],
+  "hostNames": [
+    "salary-search-api-kalheyn.azurewebsites.net"
+  ],
+  "hostNamesDisabled": false,
+  "hostingEnvironmentProfile": null,
+  "httpsOnly": false,
+  "hyperV": false,
+  "id": "/subscriptions/20bf398d-5a19-4caa-9745-d7234296e7aa/resourceGroups/SalarySearchResourceGroup/providers/Microsoft.Web/sites/salary-search-api-kalheyn",
+  "identity": null,
+  "inProgressOperationId": null,
+  "isDefaultContainer": null,
+  "isXenon": false,
+  "kind": "app,linux",
+  "lastModifiedTimeUtc": "2019-04-14T21:29:31.910000",
+  "location": "Central US",
+  "maxNumberOfWorkers": null,
+  "name": "salary-search-api-kalheyn",
+  "outboundIpAddresses": "52.165.184.170,52.165.232.134,52.165.238.159,52.165.232.85,52.165.238.211",
+  "possibleOutboundIpAddresses": "52.165.184.170,52.165.232.134,52.165.238.159,52.165.232.85,52.165.238.211,52.176.161.15,52.173.84.230",
+  "redundancyMode": "None",
+  "repositorySiteName": "salary-search-api-kalheyn",
+  "reserved": true,
+  "resourceGroup": "SalarySearchResourceGroup",
+  "scmSiteAlsoStopped": false,
+  "serverFarmId": "/subscriptions/20bf398d-5a19-4caa-9745-d7234296e7aa/resourceGroups/SalarySearchResourceGroup/providers/Microsoft.Web/serverfarms/SalarySearchServicePLan",
+  "siteConfig": null,
+  "slotSwapStatus": null,
+  "state": "Running",
+  "suspendedTill": null,
+  "tags": null,
+  "targetSwapSlot": null,
+  "trafficManagerHostNames": null,
+  "type": "Microsoft.Web/sites",
+  "usageState": "Normal"
+}
