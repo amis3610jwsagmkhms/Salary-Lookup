@@ -71,7 +71,7 @@ namespace Salarylookup.Api.Controllers
         public IActionResult GetSalaryByLastName(string lName)
         {   
             // finds the row that contains the Id
-            System.Linq.IQueryable<Salary> salary = db.Salaries.Where(s => s.Last_Name.ToLower() == lName.ToLower()); 
+            System.Linq.IQueryable<Salary> salary = db.Salaries.Where(s => s.Last_Name.ToLower().Contains(lName.ToLower())); 
             
             // if no salary is found with the id, return 404
             if (salary == null)

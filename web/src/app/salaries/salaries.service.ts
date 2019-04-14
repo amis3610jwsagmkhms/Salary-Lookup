@@ -55,27 +55,3 @@ export class SalariesService {
     )
   }
 }
-
-/**
- * Below: Mock Salaries service
- */
-
-
-// import { Injectable } from '@angular/core';
-// import { Observable, of } from 'rxjs';
-
-// import { Salary } from './salary';
-// import { SALARIES } from './mock-salaries';
-
-// @Injectable({
-//   providedIn: 'root',
-// })
-// export class SalariesService {
-
-//   constructor() { }
-
-//   getSalaries(): Observable<Salary[]> {
-//     return of(SALARIES);
-//   }
-
-// }
