@@ -1,37 +1,20 @@
 <div *ngIf="salary">
-  <h2>{{salary.last_Name | uppercase}}, {{salary.first_Name | uppercase}} {{salary.middle_name}} Salary Details</h2>
+  <h2>{{salary.last_Name | uppercase}}, {{salary.first_Name | uppercase}} {{salary.middle_name}}</h2>
   <div>
-    <p>Id: {{salary.id}}</p>
-    <p>Last Name: {{salary.last_Name}}</p>
-    <p>First Name: {{salary.first_Name}}</p>
-    <p *ngIf="salary.middle_Name">Middle Name: {{salary.middle_Name}}</p>
-    <p>College: {{salary.vp_College}}</p>
-    <p>Department: {{salary.department}}</p>
-    <p>Organization: {{salary.organization}}</p>
-    <p>Title: {{salary.title}}</p>
-    <p>Annual Base Salary: {{salary.annual_Base_Salary | currency}}</p>
-    <p>Hourly Rate: {{salary.hourly_Rate | currency}}</p>
-    <p>Sex: {{salary.sex}}</p>
-    <p>Race: {{salary.race}}</p>
-    <p>Ethnicity: {{salary.ethnicity}}</p>
-    <p>Spirit Animal: {{salary.spirit_Animal}}</p>
+    <div><span>Id:</span> {{salary.id}}</div>
+    <div><span>Last Name:</span> {{salary.last_Name}}</div>
+    <div><span>First Name:</span> {{salary.first_Name}}</div>
+    <div *ngIf="salary.middle_Name"><span>Middle Name:</span> {{salary.middle_Name}}</div>
+    <div><span>College:</span> {{salary.vp_College}}</div>
+    <div><span>Department:</span> {{salary.department}}</div>
+    <div><span>Organization:</span> {{salary.organization}}</div>
+    <div><span>Title:</span> {{salary.title}}</div>
+    <div><span>Annual Base Salary:</span> {{salary.annual_Base_Salary | currency}}</div>
+    <div><span>Hourly Rate:</span> {{salary.hourly_Rate | currency}}</div>
+    <div><span>Sex:</span> {{salary.sex}}</div>
+    <div><span>Race:</span> {{salary.race}}</div>
+    <div><span>Ethnicity:</span> {{salary.ethnicity}}</div>
+    <div><span>Spirit Animal:</span> {{salary.spirit_Animal}}</div>
   </div>  
   <button (click)="goBack();">Back</button>
 </div>
-
-
-<!-- Salary schema -->
-<!-- id: number;
-last_Name: string;
-first_Name: string;
-middle_Name: string;
-vp_College: string;
-department: string;
-organization: string;
-title: string;
-annual_Base_Salary: number;
-hourly_Rate: number;
-sex: string;
-race: string;
-ethnicity: string;
-spirit_Animal: string; -->

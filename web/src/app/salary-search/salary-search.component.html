@@ -3,11 +3,11 @@
  
   <input #searchBox id="search-box" (input)="search(searchBox.value)" placeholder="Enter a last name"/>
  
-  <ul class="search-result">
-    <li *ngFor="let salary of salaries$ | async">
+  <div class="search-result">
+    <div *ngFor="let salary of salaries$ | async">
       <a href="/detail/{{salary.id}}">
         {{salary.last_Name}}, {{salary.first_Name}} {{salary.middle_Name}}
       </a>
-    </li>
-  </ul>
+    </div>
+  </div>
 </div>
