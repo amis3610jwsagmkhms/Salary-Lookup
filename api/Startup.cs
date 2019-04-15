@@ -27,7 +27,7 @@ namespace Salarylookup.Api
             {
                 options.AddPolicy("CorsPolicy", builder =>
                 {
-                    builder.WithOrigins("http://kalheyn.z19.web.core.windows.net/")
+                    builder.WithOrigins("http://kalheyn.z19.web.core.windows.net/", "http://localhost:4200/")
                     .AllowAnyMethod()
                     .AllowAnyHeader();
                 });
