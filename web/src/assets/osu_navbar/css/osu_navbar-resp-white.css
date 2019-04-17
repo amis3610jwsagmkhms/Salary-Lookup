@@ -80,6 +80,8 @@ only screen and (max-width: 700px) and (min-device-pixel-ratio: 2) {
     #osu_navbar .univ_name a {background-image: url(../images/white/osu_name@2x.png) !important;
     /* scale name background size */
     /* -webkit-background-size: 100px 16px; -moz-background-size: 100px 16px; */ background-size: contain;}
+  #osu_navbar div.links ul li a.home {background-image:url(../images/white/home.png) !important;}
+  #osu_navbar div.links ul li a.random {background-image:url(../images/white/random.png) !important;}
   #osu_navbar div.links ul li a.help {background-image:url(../images/white/resp-help@2x.png) !important;}
   #osu_navbar div.links ul li a.buckeyelink {background-image:url(../images/white/resp-buckeyelink@2x.png) !important;}
   #osu_navbar div.links ul li a.map {background-image:url(../images/white/resp-map@2x.png) !important;}
@@ -88,6 +90,8 @@ only screen and (max-width: 700px) and (min-device-pixel-ratio: 2) {
   #osu_navbar div.links ul li a.search {background-image:url(../images/white/resp-search@2x.png) !important;}
 
   /* scale icon background size */
+  #osu_navbar div.links ul li a.home,
+  #osu_navbar div.links ul li a.random,
   #osu_navbar div.links ul li a.help,
   #osu_navbar div.links ul li a.buckeyelink,
   #osu_navbar div.links ul li a.map,

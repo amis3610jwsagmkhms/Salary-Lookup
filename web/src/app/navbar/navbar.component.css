@@ -1,7 +1,7 @@
 .navbar {
     min-height: 80px;
     color:white;
-    font-family: "Georgia", serif;
+    font-family: 'capita', 'Times New Roman', serif;
     display: flex;
     flex-flow: row nowrap;
     justify-content: flex-start;
@@ -22,7 +22,7 @@
     padding: 0px 0px 0px 0px;
     font-size:40px;
     font-weight:500;
-    font-family: "Georgia", serif;
+    font-family: 'capita', 'Times New Roman', serif;
     height: 50px;
     line-height: 30px;
     flex-grow: 2;
@@ -32,7 +32,7 @@
     padding: 0px 0px 0px 90px;
     font-size:25px;
     font-weight:500;
-    font-family: "Georgia", serif;
+    font-family: 'capita', 'Times New Roman', serif;
     height: 40px;
     line-height: 0px;
   }
@@ -42,6 +42,7 @@
     padding: 10px 0px 10px 10px;
     font-size:20px;
     font-weight:300;
+    font-family: 'capita', 'Times New Roman', serif;
     height: 100px;
     line-height: 100px;
     align-self: flex-end;
@@ -63,7 +64,7 @@
 
   .nav-link:hover { 
     color:#ad2622;
-  }
+  } 
   
   @media (min-width: 768px) {
     .navbar-nav > li > a {
@@ -73,3 +74,6 @@
       line-height: 27px;
     }
   }
+
+  
+

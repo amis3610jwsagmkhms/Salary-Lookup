@@ -61,3 +61,17 @@ span {
   #footer_social a.socialicon img {background:transparent;border:none; }
   #footer_social a:hover.socialicon img {background:#b00; background:rgba(187,0,0,0.5);
 }
+
+/* REMOVE FOOTER WHEN SCREEN SHRINKS */
+@media only screen and (max-width: 700px) and (-webkit-min-device-pixel-ratio: 2),
+only screen and (max-width: 700px) and (min--moz-device-pixel-ratio: 2),
+only screen and (max-width: 700px) and (-o-min-device-pixel-ratio: 2/1),
+only screen and (max-width: 700px) and (min-device-pixel-ratio: 2) {
+    
+
+
+        #page_footer, app-navbar {
+            display: none;
+        }
+
+    }

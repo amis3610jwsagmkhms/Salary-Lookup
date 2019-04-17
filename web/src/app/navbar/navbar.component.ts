@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
-  randomNumber = Math.floor((Math.random() * 22000) + 1);
+  randomNumber = Math.floor((Math.random() * 41560) + 1);
 
   constructor() { }
 
